@@ -62,8 +62,8 @@ body {
     transition: 0.5s;
     cursor: pointer;
     font-size: 21px;
-    background-color: rgb(0, 106, 255);
-    border-color: rgb(0, 106, 255);
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
 }
 
 .subTxt {
