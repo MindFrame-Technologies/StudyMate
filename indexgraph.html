@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criador de Gráficos</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="stylegraph.css">
+</head>
+<body>
+    <div class="title">
+    
+        <div class="write">
+    
+            <h1>StudyMate</h1>
+            <h3 class="subT">Gráficos</h3>
+    
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Criador de Gráficos</h1>
+        <div>
+            <label for="chartTitle">Título do Gráfico:</label>
+            <input type="text" id="chartTitle" placeholder="Título do gráfico">
+
+            <label for="labels">Rótulos (separados por vírgula):</label>
+            <input type="text" id="labels" placeholder="Exemplo: A, B, C, D">
+
+            <label for="values">Valores (separados por vírgula):</label>
+            <input type="text" id="values" placeholder="Exemplo: 10, 20, 30, 40">
+
+            <label for="chartType">Tipo de Gráfico:</label>
+            <select id="chartType">
+                <option value="bar">Barra</option>
+                <option value="line">Linha</option>
+                <option value="pie">Pizza</option>
+            </select>
+
+            <button id="generateGraph">Gerar Gráfico</button>
+        </div>
+
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script src="maingraph.js"></script>
+</body>
+</html>
